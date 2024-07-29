@@ -4,7 +4,7 @@
 # sbt = read.csv("species_by_trait_08July24.csv")
 options(warn = -1)
 
-install.packages("mvabund")
+# install.packages("mvabund")
 library(mvabund)
 library(cluster)
 # library(dplyr)
