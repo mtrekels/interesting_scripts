@@ -1,0 +1,66 @@
+maarten@maarten-XPS-13:~/Documents/GIT/interesting_scripts$ /usr/bin/python /home/maarten/Documents/GIT/interesting_scripts/test_gemini.py
+The provided text describes a herbarium specimen.  We can represent this in Darwin Core (DwC) using the following structure. Note that some fields require interpretation and educated guesses due to the ambiguity of the source text.  Multiple records might be needed depending on how we interpret the data from multiple herbaria (Utrecht and Paris).
+
+
+**Record 1: Utrecht University Herbarium (U)**
+
+* **occurrenceID:** PL04847715  (This is likely the unique identifier)
+* **institutionID:** U (Utrecht University Herbarium)
+* **collectionID:**  (This field might be missing or requires additional information)
+* **datasetID:** (Needs to be defined based on the specific dataset)
+* **catalogNumber:** PL04847715
+* **recordedBy:** M.J. Jansen-Jacobs, B.J.H. ter Welle, H.J.M. Sipman, V. James
+* **recordNumber:** 3019 (From "M.J. Jansen-Jacobs nr. 3019")
+* **eventDate:** 20 Oct 1992
+* **decimalLatitude:** 2.0 (from "02 00 N")
+* **decimalLongitude:** -59.25 (from "059 15 W")
+* **minimumElevationInMeters:** 150
+* **maximumElevationInMeters:** 250
+* **verbatimElevation:** 150-250 m
+* **country:** Guyana
+* **stateProvince:** Rupununi District
+* **verbatimLocality:** Rupununi District, between Kuyuwini Landing and Kassikaityu River.
+* **habitat:** Forest
+* **lifeStage:**  (Likely adult, but needs confirmation)
+* **basisOfRecord:** PreservedSpecimen
+* **organismID:** (Absent, could be generated)
+* **scientificName:** *Mezia angelica* W.R. Anderson
+* **kingdom:** Plantae
+* **phylum:** Tracheophyta (Assumed, needs confirmation)
+* **class:** Magnoliopsida (Assumed, needs confirmation)
+* **order:** Malpighiales (Implied by family)
+* **family:** Malpighiaceae
+* **genus:** Mezia
+* **specificEpithet:** angelica
+* **identifiedBy:** W.R. Anderson
+* **dateIdentified:** 1995
+* **sex:** (Unspecified)
+* **growthForm:** Liana
+* **notes:** "No leaves. Inflorescences long, hanging, branches brownish. Bracts and sepals yellow. Petals yellow, slightly unequal, one petal smaller and somewhat reddish. Stamens pale brown. Styles green."
+
+
+**Record 2: Muséum national d'Histoire naturelle (Paris)**
+
+* **occurrenceID:** P04770487 (Assuming this is the unique identifier)
+* **institutionID:** P (Muséum national d'Histoire naturelle)
+* **collectionID:** (Needs to be defined based on the specific collection in Paris)
+* **datasetID:** (Needs to be defined based on the specific dataset)
+* **catalogNumber:** P04770487
+* **recordedBy:** (Information missing from the Paris section)
+* **recordNumber:** (Missing from Paris section)
+* **eventDate:** (Missing from Paris section, possibly same as Utrecht specimen)
+* **decimalLatitude:** (Missing from Paris section, possibly same as Utrecht specimen)
+* **decimalLongitude:** (Missing from Paris section, possibly same as Utrecht specimen)
+* **...** (Other fields would need to be filled in based on what information can be reasonably inferred or obtained from the image)
+
+**Important Considerations:**
+
+* **Duplicates:**  The same specimen may be represented in both herbaria.  If so, a "relatedResource" field in DwC can link the two records.
+* **Ambiguity:** The provided text is incomplete and ambiguous in several places.  Much of the information above is inferred.  Ideally, more information should be gathered from the herbarium records themselves.
+* **Data Standards:**  While this provides a structure, specific implementation details might vary depending on the DwC implementation used.
+
+
+This DwC representation aims to capture the available information, but accurate and complete data requires access to the original herbarium sheets.  The incompleteness of the provided text necessitates educated guesses in several fields.
+
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1737037669.646440   56579 init.cc:232] grpc_wait_for_s

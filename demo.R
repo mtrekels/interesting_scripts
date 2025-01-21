@@ -4,7 +4,7 @@
 # sbt = read.csv("species_by_trait_08July24.csv")
 options(warn = -1)
 
-install.packages("mvabund")
+# install.packages("mvabund")
 library(mvabund)
 library(cluster)
 # library(dplyr)
@@ -18,9 +18,10 @@ s <- dim(sbt)[1] # number of species
 env <- data.frame(temp=c(2.3, 4.5, 6.8, 7.9), rain=c(200, 340, 240, 150)) # environment dataframe
 n <- dim(env)[1] # number of sites
 
-sbs<-as.data.frame(matrix(rpois(n*s,1.5),nrow=n, ncol=s)) # site-by-species counts
+sbs <- as.data.frame(matrix(rpois(n*s,1.5),nrow=n, ncol=s)) # site-by-species counts
 
-abund<- sbs[2,] # abundance of site 2
+abund <- sbs[2,] # abundance of site 2
+
 
 ###############
 
