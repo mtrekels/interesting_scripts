@@ -5,7 +5,7 @@ from PIL import Image
 
 image_str = pytesseract.image_to_string(Image.open('./data/p04770487.jpg'))
 
-
+print(image_str)
 
 genai.configure(api_key=os.environ.get("GOOGLE_API_KEY"))
 model = genai.GenerativeModel("gemini-1.5-flash")

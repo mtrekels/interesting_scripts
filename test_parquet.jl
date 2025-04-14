@@ -6,7 +6,7 @@ using LibGEOS  # For WKB decoding
 using GeometryBasics  # For geometry handling
 using ArchGDAL
 
-data_path = "/home/maarten/Documents/GIT/interesting_scripts/data/data_ZA.parquet";
+data_path = "/home/maarten/Documents/GIT/AlienRoE/data/data_qdgc/data_BE.parquet";
 
 # Read GeoParquet data
 gdf = GP.read(data_path)
@@ -14,6 +14,7 @@ gdf = GP.read(data_path)
 # Filter rows based on specieskey
 filtered_gdf = gdf[.!ismissing.(gdf.specieskey) .&& (gdf.specieskey .== 2435350.0), :]
 
+#==
 # Function to convert LibGEOS geometries to GeometryBasics geometries
 function convert_to_geometrybasics(geom::LibGEOS.AbstractGeometry)
     if geom isa LibGEOS.Polygon
@@ -54,3 +55,4 @@ poly!(ax, geometries,
 )
 
 fig
+==#
