@@ -1,0 +1,80 @@
+{
+    "ltc:OrganisationalUnit": {
+        "ltc:hasIdentifier": [
+            {
+                "ltc:identifier": "DU",
+                "ltc:identifierType": "acronym"
+            },
+            {
+                "ltc:identifier": "01",
+                "ltc:identifierType": "pid"
+            }
+        ],
+        "ltc:organisationalUnitName": "Dino University",
+        "ltc:organisationalUnitType": "University",
+        "ltc:hasAddress": [
+            {
+                "schema:addressLocality": "Dino City"
+            }
+        ],
+        "ltc:ObjectGroup": [
+            {
+                "ltc:hasIdentifier": [
+                    {
+                        "ltc:identifier": "11",
+                        "ltc:identifierType": "pid"
+                    }
+                ], 
+                "ltc:collectionName": "", 
+                "ltc:hasMeasurementOrFact": [
+                    {
+                       "dwc:measurementType": "Object count",
+                       "dwc:measurementUnit": "count",
+                       "dwc:measurementValue": ""
+                    }
+                ]
+            },
+            {
+                "identifier": "", "name": ""
+            }
+        ],
+        "ltc:organisationalUnit": [
+            {
+                "ltc:hasIdentifier": [
+                    {
+                        "ltc:identifier": "02",
+                        "ltc:identifierType": "pid" 
+                    }
+                ],
+                "ltc:organisationalUnitName": "Dino Museum",
+                "ltc:organisationalUnitType": "museum",
+                "ltc:parentOrganisationalUnitID": "01",
+                "ltc:hasPersonRole": [
+                    {
+                        "ltc:hasRole": [
+                            {
+                                "ltc:roleName": "superhuman"
+                            }
+                        ],
+                        "ltc:hasPerson": [
+                            {
+                                "abcd:fullName": "Zein",
+                                "ltc:hasTemporalCoverage": "forever"
+                            }
+                        ]
+                    }
+                ],
+                "ltc:ObjectGroup": [
+                    {
+                        "identifier": "",
+                        "name": ""
+                    },
+                    {
+                        "identifier" : "",
+                        "name": ""
+                    }
+                ]
+            }
+        ]
+    }
+}
