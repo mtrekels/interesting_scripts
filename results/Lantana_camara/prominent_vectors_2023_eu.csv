@@ -1,0 +1,5 @@
+role,global_index,year_file,condition,PC1_score
+abs_pc1_leader,5797,2023,eu,0.3276414391232318
+pos_pc1_leader,5797,2023,eu,0.3276414391232318
+neg_pc1_leader,5678,2023,eu,0.14523389660461442
+representative_medoid,5765,2023,eu,0.22916806297053216

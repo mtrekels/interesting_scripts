@@ -1,0 +1,5 @@
+role,global_index,year_file,condition,PC1_score
+abs_pc1_leader,2966,2022,native,0.6991096375717156
+pos_pc1_leader,2966,2022,native,0.6991096375717156
+neg_pc1_leader,2883,2022,native,0.14523389660461442
+representative_medoid,3168,2022,native,0.4556222824113606

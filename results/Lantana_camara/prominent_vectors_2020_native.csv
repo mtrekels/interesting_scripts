@@ -1,0 +1,5 @@
+role,global_index,year_file,condition,PC1_score
+abs_pc1_leader,840,2020,native,0.6768602722015998
+pos_pc1_leader,840,2020,native,0.6768602722015998
+neg_pc1_leader,672,2020,native,0.14523389660461442
+representative_medoid,897,2020,native,0.5776702111456087
